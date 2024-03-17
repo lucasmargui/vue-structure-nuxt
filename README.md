@@ -20,6 +20,21 @@ yarn install
 bun install
 ```
 
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
+```
+
+
 
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
