@@ -203,6 +203,7 @@ Ao renderizar o componente error.vue, o Nuxt irá passar como props o objeto err
 
 Para criação de um server Route é necessário criar o diretório server no diretório root do projeto
 
+A lógica de roteamento será semelhante ao de pages, porém ao acessar o caminho o servidor irá retornar um json definido em ninja.js
 
 <div align="center">
   <h3> Diretório </h3>
@@ -210,11 +211,23 @@ Para criação de um server Route é necessário criar o diretório server no di
 </div>
 
 
-A lógica de roteamento será semelhante ao de pages, porém ao acessar o caminho o servidor irá retornar um json definido em ninja.js
+
+### Método Get
 
 <div align="center">
   <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/ef7fc195-5062-4379-a703-934d2334d41c" style="width:100%">
 </div>
+
+### Método Post
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/2ae50758-35e3-459c-886c-49d799f940a5" style="width:100%">
+</div>
+
+
+
+
+
 
 
 
