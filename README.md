@@ -120,11 +120,25 @@ O código utiliza a função useFetch para realizar uma requisição assíncrona
 O parâmetro key é fornecido como uma opção para a função useFetch, sendo utilizado na chamada useFetch(uri, { key: id }). Esse método é implementado para permitir que uma nova requisição seja acionada, caso uma requisição anterior já tenha sido feita na página. Isso garante que o framework reconheça a intenção de buscar novos dados, evitando a reutilização de uma requisição anterior.
 
 
+## Componentes reutilizáveis
 
+Criação de um diretório de componentes para o reconhecimento automático pelo NUXT, facilitando a localização e utilização dos componentes necessários. Durante a passagem de propriedades via pros utilizando componentes dentro de outros componentes, é necessário identificar e realizar a desestruturação das propriedades recebidas.
 
+### Passando as propriedades via props
 
+```
+    <div v-for="p in products"> 
+            <ProductCard :product="p" />
+    </div>
 
+```
 
+### Desestruturação das propriedades recebidas.
+
+```
+ const { product } = defineProps(['product'])
+
+```
 
 
 
