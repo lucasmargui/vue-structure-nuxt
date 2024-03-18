@@ -90,6 +90,42 @@ definePageMeta ({
 </div>
 
 
+## Adicionando TailWind Css
+
+Tailwind CSS é um framework de desenvolvimento front-end para construir interfaces de usuário em páginas da web. Ele fornece uma abordagem diferente de outros frameworks CSS, como Bootstrap ou Foundation. Em vez de oferecer componentes prontos para uso, o Tailwind CSS fornece classes de utilidade que podem ser aplicadas diretamente ao HTML para estilizar os elementos.
+
+```
+npm install --save-dev @nuxtjs/tailwindcss
+
+```
+
+
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/ba7bfa7e-2f88-4742-8aba-a29c99d7da33" style="width:60%">
+</div>
+
+
+## Fetching data
+
+O código utiliza a função useFetch para realizar uma requisição assíncrona para o endpoint especificado. Essa função retorna um objeto que possui uma propriedade chamada products, a qual contém uma coleção de dados de produtos. A desestruturação { data: products } é utilizada para extrair a propriedade data do objeto retornado pela função useFetch, sendo que data é o nome da chave do objeto a ser extraída, e products é o nome da variável que receberá o valor correspondente a essa chave.
+
+![image]()
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/ac87508a-1116-4077-85c1-1df80951cb82" style="width:100%">
+</div>
+
+
+O parâmetro key é fornecido como uma opção para a função useFetch, sendo utilizado na chamada useFetch(uri, { key: id }). Esse método é implementado para permitir que uma nova requisição seja acionada, caso uma requisição anterior já tenha sido feita na página. Isso garante que o framework reconheça a intenção de buscar novos dados, evitando a reutilização de uma requisição anterior.
+
+
+
+
+
+
+
+
 
 
 
