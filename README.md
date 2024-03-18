@@ -231,9 +231,20 @@ Ao criar uma rota dinâmica, é comum acessar um endpoint da API a partir do fro
 
 Além disso, é possível criar subdiretórios dentro do diretório "api", e isso será refletido no caminho da rota, como por exemplo, ao criar um subdiretório chamado "currency" dentro de "api" e um arquivo dentro desse subdiretório, o endpoint resultante será "/api/currency/nomedoarquivo".
 
+
+### Criação da rota dinâmica
+
 Para implementar subrotas dinâmicas, podemos seguir a lógica utilizada para arquivos com padrões dinâmicos, como "[id].vue" em produtos. Neste caso, faremos uso de um padrão similar, utilizando "[code]" para referenciar cada par de moedas, por exemplo.
 
 Além disso, para garantir a segurança e evitar a exposição de chaves de API diretamente no código-fonte, é recomendável utilizar variáveis de ambiente. Para isso, podemos criar um arquivo chamado ".env" e adicionar nossa chave de API como uma variável de ambiente, permitindo seu acesso seguro e sem exposição direta no código-fonte.
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/fdb354bd-1a6b-44da-bfd7-6f2625fb967c" style="width:80%">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/86161382-9f77-44d8-aaac-f4bd8f721b73" style="width:80%">
+</div>
+
+
+
 
 
 ### Criação variável de ambiente
@@ -248,6 +259,20 @@ Para incluir a apiKey de forma segura, sem expô-la no código, podemos configur
 ### Integrando a variável de ambiente à estrutura
 
 Incorporamos a variável de ambiente no arquivo nuxt.config.ts, especificamente dentro do parâmetro runtimeConfig.
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/fba81b1a-7e4d-4afb-a5d4-5bcb4131f4a0" style="width:60%">
+</div>
+
+
+### Buscando o valor da variável de ambiente 
+
+Utilizamos useRuntimeConfig() para acessar as propriedades de runtimeConfig e através de uma destruturação extraimos o valor de currencyKey registrado em runtimeConfig.
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/121d9665-0d73-45d0-bad5-36b074b4ba1f" style="width:60%">
+</div>
+
 
 
 
