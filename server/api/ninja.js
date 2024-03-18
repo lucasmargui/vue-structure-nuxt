@@ -1,12 +1,18 @@
 
 export default defineEventHandler(async (event) => {
-    const { name }  = getQuery(event)
+    // const { name }  = getQuery(event)
     
    
-    const { age } = await readBody(event)
+    // const { age } = await readBody(event)
+
+    // return {
+    //     message: `Hello ${name}! You are ${age}`,
+    // };
 
 
-    return {
-        message: `Hello ${name}! You are ${age}`,
-    };
+    const { data } = await $fetch('')
+
+    return data
+
+    
   });
