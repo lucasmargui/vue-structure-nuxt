@@ -148,6 +148,15 @@ Criação de um diretório de componentes para o reconhecimento automático pelo
 </div>
 
 
+## Customização de Error Page
+
+No diretório raiz, crie um arquivo chamado error.vue. O framework Nuxt irá automaticamente localizar este arquivo e o utilizará como view para exibir erros. Quando chamado, Nuxt passará o objeto de erro como uma propriedade. Dentro do arquivo error.vue, é necessário identificar este objeto e utilizar suas propriedades conforme necessário.
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/f31ff49b-bf41-462a-b85a-1c15848edc54" style="width:100%">
+</div>
+
+
 
 
 
