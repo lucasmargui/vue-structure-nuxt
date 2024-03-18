@@ -14,6 +14,43 @@
 npx nuxi@latest init vue-estrutura-nuxt
 ```
 
+
+
+### Meta data e useHead
+
+
+Esse código é uma configuração para uma aplicação Nuxt.js para usar Tailwind CSS como um módulo, define o título e a descrição da página, e adiciona um link para importar a fonte "Material Icons".
+
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/165d1241-3285-40d8-9af2-9662693523cf" style="width:100%">
+</div>
+
+
+
+- export default defineNuxtConfig({ ... }): Este é um padrão comum em projetos Nuxt.js. Ele exporta a configuração da aplicação usando a função defineNuxtConfig, que é fornecida pelo próprio framework Nuxt.js.
+
+- modules: ['@nuxtjs/tailwindcss']: Aqui está sendo definido um módulo para o Nuxt.js. Neste caso, é o módulo tailwindcss, que é uma ferramenta popular para estilização de aplicações web.
+
+- app: Esta é uma seção onde você pode definir configurações específicas para a aplicação Nuxt.js.
+
+- head: Esta é uma seção onde você pode definir meta informações para a cabeça do documento HTML.
+
+- title: 'Nuxt exemplo': Define o título da página como "Nuxt exemplo".
+
+- meta: Aqui são definidas informações meta para a página. No código fornecido, há uma meta descrição definida como "Everything about nuxt 3".
+
+- link: Aqui são definidos os links para folhas de estilo externas. No código fornecido, está sendo adicionado um link para importar a fonte "Material Icons" do Google Fonts.
+
+###  Adicionando TailWind Css
+
+Tailwind CSS é um framework de desenvolvimento front-end para construir interfaces de usuário em páginas da web. Ele fornece uma abordagem diferente de outros frameworks CSS, como Bootstrap ou Foundation. Em vez de oferecer componentes prontos para uso, o Tailwind CSS fornece classes de utilidade que podem ser aplicadas diretamente ao HTML para estilizar os elementos.
+
+```
+npm install --save-dev @nuxtjs/tailwindcss
+
+```
+
 ## Rotas de navegação
 
 
@@ -90,20 +127,6 @@ definePageMeta ({
 </div>
 
 
-## Adicionando TailWind Css
-
-Tailwind CSS é um framework de desenvolvimento front-end para construir interfaces de usuário em páginas da web. Ele fornece uma abordagem diferente de outros frameworks CSS, como Bootstrap ou Foundation. Em vez de oferecer componentes prontos para uso, o Tailwind CSS fornece classes de utilidade que podem ser aplicadas diretamente ao HTML para estilizar os elementos.
-
-```
-npm install --save-dev @nuxtjs/tailwindcss
-
-```
-
-
-
-<div align="center">
-  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/ba7bfa7e-2f88-4742-8aba-a29c99d7da33" style="width:60%">
-</div>
 
 
 ## Fetching data
@@ -152,9 +175,12 @@ Criação de um diretório de componentes para o reconhecimento automático pelo
 
 No diretório raiz, crie um arquivo chamado error.vue. O framework Nuxt irá automaticamente localizar este arquivo e o utilizará como view para exibir erros. Quando chamado, Nuxt passará o objeto de erro como uma propriedade. Dentro do arquivo error.vue, é necessário identificar este objeto e utilizar suas propriedades conforme necessário.
 
+Ao renderizar o componente error.vue, o Nuxt irá passar como props o objeto error.
+
 <div align="center">
   <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/f31ff49b-bf41-462a-b85a-1c15848edc54" style="width:100%">
 </div>
+
 
 
 
