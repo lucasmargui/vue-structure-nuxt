@@ -181,6 +181,25 @@ Ao renderizar o componente error.vue, o Nuxt irá passar como props o objeto err
   <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/f31ff49b-bf41-462a-b85a-1c15848edc54" style="width:100%">
 </div>
 
+## Metadata personalizado
+
+### Alterando via script
+
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/2a95bac7-1868-43f9-9a86-f0e952a6fcb0" style="width:60%">
+</div>
+  
+
+### Alterando via componentes
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/4867df1a-8e14-422b-b290-1aeaf931f99e" style="width:60%">
+</div>
+
+
+
+
 
 
 
