@@ -2,12 +2,6 @@
 <p align="center">🚀 Estrutura Nuxt para referências futuras</p>
 
 
-
-<div align="center">
-  <img src="" style="width:50%">
-</div>
-<br>
-
 ## Criação de projeto Nuxt
 
 ```
@@ -272,6 +266,16 @@ Utilizamos useRuntimeConfig() para acessar as propriedades de runtimeConfig e at
 <div align="center">
   <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/121d9665-0d73-45d0-bad5-36b074b4ba1f" style="width:60%">
 </div>
+
+### Realizando a requisição na rota dinâmica
+
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/84388b05-5373-4159-b696-14bf29aba96b" style="width:60%">
+</div>
+
+
+
 
 
 
