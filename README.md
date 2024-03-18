@@ -110,8 +110,6 @@ npm install --save-dev @nuxtjs/tailwindcss
 
 O código utiliza a função useFetch para realizar uma requisição assíncrona para o endpoint especificado. Essa função retorna um objeto que possui uma propriedade chamada products, a qual contém uma coleção de dados de produtos. A desestruturação { data: products } é utilizada para extrair a propriedade data do objeto retornado pela função useFetch, sendo que data é o nome da chave do objeto a ser extraída, e products é o nome da variável que receberá o valor correspondente a essa chave.
 
-![image]()
-
 <div align="center">
   <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/ac87508a-1116-4077-85c1-1df80951cb82" style="width:100%">
 </div>
@@ -124,7 +122,12 @@ O parâmetro key é fornecido como uma opção para a função useFetch, sendo u
 
 Criação de um diretório de componentes para o reconhecimento automático pelo NUXT, facilitando a localização e utilização dos componentes necessários. Durante a passagem de propriedades via pros utilizando componentes dentro de outros componentes, é necessário identificar e realizar a desestruturação das propriedades recebidas.
 
-### Passando as propriedades via props
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/53dde8a9-001d-4142-8285-272bb33f25b8" style="width:100%">
+</div>
+
+
+- Passando as propriedades via props
 
 ```
     <div v-for="p in products"> 
@@ -133,12 +136,24 @@ Criação de um diretório de componentes para o reconhecimento automático pelo
 
 ```
 
-### Desestruturação das propriedades recebidas.
+- Desestruturação das propriedades recebidas.
 
 ```
  const { product } = defineProps(['product'])
 
 ```
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/17806030-2ce0-4813-892d-4e527325cf04" style="width:100%">
+</div>
+
+
+
+
+
+
+
+
 
 
 
