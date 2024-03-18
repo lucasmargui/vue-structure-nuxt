@@ -121,6 +121,22 @@ definePageMeta ({
 </div>
 
 
+### Resultado 
+
+<div align="center">
+  <h3>Default</h3>
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/11d015e9-c808-4356-b9b9-072decaea675" style="width:100%">
+  <h3>Products</h3>
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/031c1e5a-626c-4d69-aadc-e6d71c5b23b0" style="width:100%">
+</div>
+
+
+
+
+
+
+
+
 
 
 ## Fetching data
@@ -133,6 +149,15 @@ O código utiliza a função useFetch para realizar uma requisição assíncrona
 
 
 O parâmetro key é fornecido como uma opção para a função useFetch, sendo utilizado na chamada useFetch(uri, { key: id }). Esse método é implementado para permitir que uma nova requisição seja acionada, caso uma requisição anterior já tenha sido feita na página. Isso garante que o framework reconheça a intenção de buscar novos dados, evitando a reutilização de uma requisição anterior.
+
+
+### Resultado
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/9f92a625-eee0-4c28-a804-fa3c675599bc" style="width:100%">
+</div>
+
+
 
 
 ## Componentes reutilizáveis
@@ -273,6 +298,15 @@ Utilizamos useRuntimeConfig() para acessar as propriedades de runtimeConfig e at
 <div align="center">
   <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/84388b05-5373-4159-b696-14bf29aba96b" style="width:60%">
 </div>
+
+### Resultado
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/6cdc04a0-5d67-4ce3-8fbe-860dbe440910" style="width:100%">
+</div>
+
+
+
 
 
 
