@@ -225,12 +225,29 @@ A lógica de roteamento será semelhante ao de pages, porém ao acessar o caminh
 </div>
 
 
+## Rotas dinâmicas
+
+Ao criar uma rota dinâmica, é comum acessar um endpoint da API a partir do frontend, utilizando um componente específico, como no caso do componente "about", que acessa o endpoint "/api/ninja". Nesse contexto, "api" representa o diretório onde os endpoints da API são criados, enquanto "ninja" é o arquivo específico que define o endpoint.
+
+Além disso, é possível criar subdiretórios dentro do diretório "api", e isso será refletido no caminho da rota, como por exemplo, ao criar um subdiretório chamado "currency" dentro de "api" e um arquivo dentro desse subdiretório, o endpoint resultante será "/api/currency/nomedoarquivo".
+
+Para implementar subrotas dinâmicas, podemos seguir a lógica utilizada para arquivos com padrões dinâmicos, como "[id].vue" em produtos. Neste caso, faremos uso de um padrão similar, utilizando "[code]" para referenciar cada par de moedas, por exemplo.
+
+Além disso, para garantir a segurança e evitar a exposição de chaves de API diretamente no código-fonte, é recomendável utilizar variáveis de ambiente. Para isso, podemos criar um arquivo chamado ".env" e adicionar nossa chave de API como uma variável de ambiente, permitindo seu acesso seguro e sem exposição direta no código-fonte.
 
 
+### Criação variável de ambiente
+
+Para incluir a apiKey de forma segura, sem expô-la no código, podemos configurar uma variável de ambiente e armazená-la em um arquivo .env.
+
+<div align="center">
+  <img src="https://github.com/lucasmargui/Vue_Estrutura_Nuxt/assets/157809964/943303bc-1260-4a15-a11c-97abc87bb281" style="width:60%">
+</div>
 
 
+### Integrando a variável de ambiente à estrutura
 
-
+Incorporamos a variável de ambiente no arquivo nuxt.config.ts, especificamente dentro do parâmetro runtimeConfig.
 
 
 
